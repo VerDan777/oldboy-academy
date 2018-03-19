@@ -103,13 +103,30 @@
             </div>
         </div>
         <div class="slider" id="header-slider">
+            <?php
+                $args = array(
+                    'category_name' => 'form'
+                );
+                
+                query_posts($args);
+
+                if(have_posts()) {
+                    while(have_posts()) {
+                        the_post();
+                    
+                        // vars
+                        $form_announcement = get_field('form_announcement');
+                        $form__title = get_field('form_title');
+                        $form_date = get_field('form_date');
+
+            ?>
             <div class="slider__slide">
                 <div class="hero-form">
                     <header class="hero-form__header">
-                        <h2 class="hero-form__title">Старт группы
-                            <strong>«Барбер&nbsp;с&nbsp;нуля»</strong>
+                        <h2 class="hero-form__title"><?php echo $form_announcement; ?>
+                            <strong><?php echo $form__title; ?></strong>
                         </h2>
-                        <p class="hero-form__subtitle">Уже 1 ноября спешите!</p>
+                        <p class="hero-form__subtitle"><?php echo $form_date; ?></p>
                     </header>
                     <div class="hero-form__wrapper">
                         <form class="hero-form__form" action="">
@@ -126,28 +143,10 @@
                     </div>
                 </div>
             </div>
-            <div class="slider__slide">
-                <div class="hero-form">
-                    <header class="hero-form__header">
-                        <h2 class="hero-form__title">Стань
-                            <br>моделью!</h2>
-                        <p class="hero-form__subtitle">Запись на
-                            <br>бесплатную стрижку</p>
-                    </header>
-                    <div class="hero-form__wrapper">
-                        <form class="hero-form__form" action="">
-                            <input class="hero-form__input" type="text" name="name" placeholder="Имя" />
-                            <input class="hero-form__input" type="text" name="phone" placeholder="Телефон" />
-                            <input class="hero-form__button" type="submit" value="Записаться" />
-                        </form>
-                        <div class="hero-form__warning">Заполняя данную форму
-                            <br> вы&nbsp;принимаете условия
-                            <br>
-                            <a href="http://">политики конфиденциальности</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php
+                }
+            }
+            ?>
         </div>
     </section>
 
