@@ -4,6 +4,7 @@
     $str_json           = file_get_contents('php://input');
     $response           = json_decode($str_json, true);
     $content            = $response['content'];
+    
 
     $to  = "<mr.kurenkov@gmail.com>, ";
     $to .= "mr.kurenkov@gmail.com";

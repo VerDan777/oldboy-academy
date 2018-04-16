@@ -55,10 +55,12 @@ class FormSender {
         let dataToSend = {
             content: "<table>"
         };
+        
         for (let input of inputs) {
             let row = `<tr><td>${input.name}</td><td>${input.value}</td></tr>`;
             dataToSend.content += row;
         }
+
         dataToSend.content += "</table>";
 
 
@@ -67,7 +69,7 @@ class FormSender {
         XHR.addEventListener("load", event => {
             console.log(event.target.responseText);
         });
-        XHR.open("POST", "http://localhost/OldboyAcademy/order.php", true);
+        XHR.open("POST", "https://oldboyacademy.com/order.php", true);
         XHR.send(jsonData);
 
         // $.ajax({

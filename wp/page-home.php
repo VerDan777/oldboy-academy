@@ -129,7 +129,7 @@
         <div class="slider" id="header-slider">
             <?php
                 $args = array(
-                    'category_name' => 'courses'
+                    'category_name' => 'courses'    
                 );
 
                 query_posts($args);
