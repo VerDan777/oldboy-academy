@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        link(href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,900&amp;subset=cyrillic" rel="stylesheet")
+        link(rel="stylesheet", href="styles.css")
+
+        title OldBoy Academy мастера
+    body
+        header.page-header
+            .page-header__logo.page-header__logo--masters
+                a(href="#")
+                    img(src="./img/logo.svg" alt="Академия Олдбой логотип монохром")
+
+            .page-header__phone.page-header__phone--inner.page-header__phone--masters
+                a(href="tel: +7911456-78-90") +7 911 456-78-90
+                    
+            nav.main-nav.main-nav---side-menu
+                .main-nav__logo
+                    img(src="./img/logo-bw.svg", alt="Академия Олдбой логотип монохром")
+
+                ul.main-nav__list
+                    li.main-nav__item: a.main-nav__link(href="#about") Об Академии
+                    li.main-nav__item: a.main-nav__link(href="#features") Преимущества
+                    li.main-nav__item: a.main-nav__link(href="#courses") Наши Курсы
+                    li.main-nav__item: a.main-nav__link(href="#contacts") Контакты
+
+                .main-nav__social
+                    .masson
+                        .masson__logo
+                            img(src="./img/masson.png" alt="")
+                        .masson__social
+                            a(href="#").icon-vkontakte
+                            a(href="#").icon-instagram
+
+                        a.masson__tag(href="#") #<em>OldboyAcademy</em>
+
+            .menu-icon: .menu-icon__middle
+
+        section.masters
+            .masters__card
+                .masters__badge oldboy<br>master
+                .masters__card-info
+                    header.masters__header
+                        h2.masters__name Юрий Артюх
+                        h3.masters__title Стаж 16 лет
+                        p.masters__description Мастер-универсал, проработав 11 лет в стилистике, ушёл в барберинг. В своей работе переплетает оба направления, расширяя границы индустрии: Антон гармонично сочетает мягкость линий из женских стрижек и четкость контуров барберинга. 
+                        b.masters__skill-time 3 года <br><span>преподавательский стаж</span><br>
+                        b.masters__skill-time 5 лет<br><span>Стаж в качестве барбера</span>
+
+                    footer.masters__footer
+                        article.masters__card-feature
+                            h3.masters__title Конкурсы и награды
+                            ul.masters__achivements-list
+                                li.masters__achivements-item Чемпион россии</br>по коллористике
+                                li.masters__achivements-item Финалист<br>Russian Hair Awards
+                                li.masters__achivements-item Победитель<br>Barber Connect<br>в номинации Fast Shave
+                        .masters__more
+                            a.button.button--more(href="#") Подробнее о мастере
+
+                .masters__photo.masters__photo--left: img(src="./img/masters/master2.png" alt="мастер")
+
+            .masters__card
+                .masters__badge.masters__badge--left oldboy<br>master
+                .masters__card-info
+                    header.masters__header.masters__header--right
+                        h2.masters__name Антон нижник
+                        h3.masters__title Стаж 16 лет
+                        p.masters__description Мастер-универсал, проработав 11 лет в стилистике, ушёл в барберинг. В своей работе переплетает оба направления, расширяя границы индустрии: Антон гармонично сочетает мягкость линий из женских стрижек и четкость контуров барберинга. 
+                        b.masters__skill-time 3 года <br><span>преподавательский стаж</span><br>
+                        b.masters__skill-time 5 лет<br><span>Стаж в качестве барбера</span>
+
+                    footer.masters__footer
+                        article.masters__card-feature
+                            h3.masters__title Конкурсы и награды
+                            ul.masters__achivements-list
+                                li.masters__achivements-item Чемпион россии</br>по коллористике
+                                li.masters__achivements-item Финалист<br>Russian Hair Awards
+                                li.masters__achivements-item Победитель<br>Barber Connect<br>в номинации Fast Shave
+                        .masters__more
+                            a.button.button--more(href="#") Подробнее о мастере
+
+                .masters__photo.masters__photo--right: img(src="./img/masters/master3.png" alt="мастер")
+
+    script(src="menu.js")
+    script(src="app.js")

@@ -1113,27 +1113,45 @@ body {
 
 .page-header {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #ffffff;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
+  .page-header__logo {
+    width: 115px; }
+    .page-header__logo img {
+      width: 100%; }
+    .page-header__logo--masters {
+      margin-top: 20px;
+      margin-left: 20px; }
+      @media (min-width: 1200px) {
+        .page-header__logo--masters {
+          display: none; } }
   .page-header__phone {
-    padding-right: 70px;
+    padding-right: 85px;
     font-family: "Lora", serif;
     font-size: 0.9rem;
     font-size: 1rem;
     font-weight: 700;
-    line-height: 80px;
     text-align: right; }
+    @media (min-width: 1200px) {
+      .page-header__phone--masters {
+        display: none; } }
     @media (min-width: 700px) {
       .page-header__phone {
-        padding-right: 94px;
+        padding-right: 25px;
         font-size: 1.25rem; } }
     @media (min-width: 1200px) {
       .page-header__phone {
         padding-right: 54px; } }
-    @media (min-width: 700px) {
-      .page-header__phone--inner {
-        margin-right: -35px; } }
     @media (min-width: 1200px) {
       .page-header__phone--inner {
         margin-right: 0; } }
@@ -1147,6 +1165,7 @@ body {
 
 .main-nav {
   position: fixed;
+  top: 0;
   left: -110%;
   z-index: 12;
   display: -webkit-box;
@@ -1471,6 +1490,8 @@ body {
         padding-right: 120px;
         padding-top: 80px;
         padding-bottom: 100px; } }
+  .hero--gallery {
+    background-color: #fff; }
   .hero__logo {
     width: 100px;
     padding: 0;
@@ -3564,6 +3585,8 @@ body {
     display: block; }
   .button--blue {
     background-color: #336699; }
+  .button--more {
+    padding: 15px 20px; }
 
 .slider {
   position: relative;
@@ -3938,6 +3961,10 @@ body {
   @media (min-width: 1200px) {
     .selling-feature {
       margin: 20px; } }
+  .selling-feature--light .selling-feature__title {
+    color: #ffffff; }
+  .selling-feature--light .selling-feature__text {
+    color: #ffffff; }
   .selling-feature__title {
     font-size: 1.5rem;
     font-weight: 400;
@@ -3976,3 +4003,178 @@ body {
       margin-left: -120px;
       margin-right: -120px;
       margin-top: 200px; } }
+
+.masters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media (min-width: 1200px) {
+    .masters {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 50px 30px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
+  .masters__card {
+    position: relative;
+    padding: 20px;
+    padding-top: 50px;
+    background-color: #336699;
+    background-image: url("./img/masters/master_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media (min-width: 1200px) {
+      .masters__card {
+        width: 800px; } }
+    .masters__card-info {
+      border: 1px solid #d5a353;
+      height: 100%; }
+    .masters__card::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 0;
+      z-index: 6;
+      height: 32px;
+      width: 100%;
+      background-image: url("./img/deco-b-r.svg");
+      background-size: 80px;
+      background-repeat: repeat-x;
+      background-position: -40px top; }
+      @media (min-width: 1200px) {
+        .masters__card::before {
+          display: none; } }
+    .masters__card::after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      z-index: 2;
+      height: 32px;
+      width: 100%;
+      background-image: url("./img/deco-b.svg");
+      background-size: 80px;
+      background-repeat: repeat-x;
+      background-position: center bottom; }
+      @media (min-width: 1200px) {
+        .masters__card::after {
+          display: none; } }
+  .masters__badge {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700px;
+    background-color: #d5a353; }
+    .masters__badge::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -20px;
+      height: 50%;
+      width: 20px;
+      background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #d5a353), color-stop(50%, #d5a353), color-stop(50%, transparent), to(transparent));
+      background-image: linear-gradient(to left top, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%); }
+    .masters__badge::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      height: 50%;
+      width: 20px;
+      background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #d5a353), color-stop(50%, #d5a353), color-stop(50%, transparent), to(transparent));
+      background-image: linear-gradient(to left bottom, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%); }
+  .masters__header {
+    padding: 30px;
+    padding-bottom: 0; }
+  .masters__name {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    color: #ffffff;
+    font-family: "Lora", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2.5rem; }
+  .masters__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #d5a353; }
+  .masters__description {
+    margin: 0;
+    margin-bottom: 30px;
+    color: #ffffff;
+    line-height: 2; }
+    @media (min-width: 1200px) {
+      .masters__description {
+        width: 400px; } }
+  .masters__skill-time {
+    margin-bottom: 30px;
+    display: block;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5rem; }
+    .masters__skill-time span {
+      font-size: 1rem;
+      font-weight: 400; }
+  .masters__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 0;
+    border-top: 1px solid #d5a353; }
+  .masters__card-feature {
+    margin-top: 10px;
+    width: 250px;
+    background-image: url("./img/masters/laurel.png");
+    background-repeat: no-repeat;
+    background-position: 0 30px; }
+  .masters__achivements-list {
+    width: 175px;
+    margin: 0;
+    padding: 10px 0;
+    list-style: none; }
+    @media (min-width: 1200px) {
+      .masters__achivements-list {
+        width: 250px;
+        text-align: center; } }
+  .masters__achivements-item {
+    margin-bottom: 10px;
+    color: #ffffff; }
+  .masters__more {
+    margin-top: 200px; }
+  .masters__photo {
+    position: absolute;
+    bottom: 120px;
+    right: 0px;
+    width: 250px; }
+    @media (min-width: 700px) {
+      .masters__photo {
+        width: 325px; } }
+    @media (min-width: 1200px) {
+      .masters__photo {
+        right: -90px;
+        bottom: 0;
+        width: 600px; } }
+    .masters__photo img {
+      width: 100%; }

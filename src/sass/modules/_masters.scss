@@ -1,0 +1,265 @@
+.masters {
+    // box model
+    display: flex;
+    flex-direction: column;
+    
+    @include atDesktop {
+        // box model
+        justify-content: space-between;
+        padding: 50px 30px;
+        flex-direction: row;
+    }
+
+    &__card {
+        // positioning
+        position: relative;
+
+        // box model
+        padding: 20px;
+        padding-top: 50px;
+
+        
+        // visual
+        background-color:$blue;
+        background-image: url("./img/masters/master_background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @include atDesktop {
+            // box model
+            width: 800px;
+        }
+        
+        &-info {
+            // box model
+            border: 1px solid $gold;
+            height: 100%;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 0;
+            z-index: 6;
+            height: 32px;
+            width: 100%;
+            background-image: url("./img/deco-b-r.svg");
+            background-size: 80px;
+            background-repeat: repeat-x;
+            background-position: -40px top;
+
+            @include atDesktop {
+                // box model
+                display: none;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            z-index: 2;
+            height: 32px;
+            width: 100%;
+            background-image: url("./img/deco-b.svg");
+            background-size: 80px;
+            background-repeat: repeat-x;
+            background-position: center bottom;
+
+            @include atDesktop {
+                // box model
+                display: none;
+            }
+        }
+    }
+
+    &__badge {
+        // positioning
+        position: absolute;
+        top: 45px;
+        right: 0;
+
+        // box model
+        padding: 15px 20px;
+
+        // typography
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700px;
+
+        // visual
+        background-color: $gold;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -20px;
+            height: 50%;
+            width: 20px;
+            background-image: linear-gradient(to left top, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -20px;
+            height: 50%;
+            width: 20px;
+            background-image: linear-gradient(to left bottom, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
+        }
+    }
+    
+    &__header {
+        // box model
+        padding: 30px;
+        padding-bottom: 0;
+    }
+
+    &__name {
+        // box model
+        margin: 0;
+        margin-bottom: 30px;
+        padding: 0;
+
+        // typography
+        color: $white;
+        font-family: $titleFont;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 2.5rem;
+    }
+
+    &__title {
+        // box model
+        margin: 0;
+        margin-bottom: 30px;
+
+        // typography
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $gold;
+    }
+
+    &__description {
+        // box model
+        margin: 0;
+        margin-bottom: 30px;
+
+        // typography
+        color: $white;
+        line-height: 2;
+
+        @include atDesktop {
+            width: 400px;
+        }
+    }
+
+    &__skill-time {
+        // box model
+        margin-bottom: 30px;
+        display: block;
+
+        // typography
+        color: $white;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+
+        span {
+            // typography
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+
+        // box model
+        padding: 30px;
+        padding-top: 0;
+        border-top: 1px solid $gold;
+    }
+
+    &__card-feature {
+        // box model
+        margin-top: 10px;
+        width: 250px;
+
+        // visual
+        background-image: url("./img/masters/laurel.png");
+        background-repeat: no-repeat;
+        background-position: 0 30px;
+    }
+
+    &__achivements-list {
+        // box model
+        width: 175px;
+        margin: 0;
+        padding: 10px 0;
+
+        // visual
+        list-style: none;
+
+        @include atDesktop {
+            // box model
+            width: 250px;
+
+            // typography
+            text-align: center;
+        }
+    }
+
+    &__achivements-item {
+        // box model
+        margin-bottom: 10px;
+
+        // typography
+        color: $white;
+    }
+
+    &__more {
+        // box model
+        margin-top: 200px;
+    }
+
+    &__photo {
+        // positioning
+        position: absolute;
+        bottom: 120px;
+        right: 0px;
+
+        // box model
+        width: 250px;
+
+        @include atTabletsPortrait {
+            // box model
+            width: 325px;
+        }
+        
+
+        @include atDesktop {
+            // positioning
+            right: -90px;
+            bottom: 0;
+
+            // box model
+            width: 600px;
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+}

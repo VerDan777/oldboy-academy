@@ -33,4 +33,9 @@
         // visual
         background-color: $blue;
     }
+
+    &--more {
+        // box model
+        padding: 15px 20px;
+    }
 }

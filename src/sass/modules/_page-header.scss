@@ -2,25 +2,61 @@
     // positioning
     position: relative;
 
+    // box model
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     // visual
     background-color: $white;
     transition: all 0.3s ease-out;
 
+
+    &__logo {
+        // box model
+        width: 115px;
+
+        img {
+            width: 100%;
+        }
+
+        &--masters {
+            // box model
+            margin-top: 20px;
+            margin-left: 20px;
+
+            @include atDesktop {
+                // box model
+                display: none;
+            }
+
+        }
+    
+    }
+
     &__phone {
         // box model
-        padding-right: 70px;
+        padding-right: 85px;
 
         // typography
         font-family: $titleFont;
         font-size: 0.9rem;
         font-size: 1rem;
         font-weight: 700;
-        line-height: 80px;
+        // line-height: 80px;
         text-align: right;
+
+        &--masters {
+
+            @include atDesktop {
+                // box model
+                display: none;
+            }
+        }
 
         @include atTabletsPortrait {
             // box model
-            padding-right: 94px;
+            padding-right: 25px;
 
             // typography
             font-size: 1.25rem;
@@ -32,9 +68,12 @@
         }
 
         &--inner {
+
             @include atTabletsPortrait {
                 // box model
-                margin-right: -35px;
+                // need fix
+                // margin-right: -35px;
+
             }
 
             @include atDesktop {
