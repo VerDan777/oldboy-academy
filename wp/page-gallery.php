@@ -82,16 +82,7 @@
       </header>
     </section>
 
-    <section class="gallery__content">
-      <div class="gallery__img"><img src="./img/gallery/barberina_header.jpg"/></div>
-      <div class="gallery__img"><img src="./img/gallery/barber_tools.jpg"/></div>
-      <div class="gallery__img"><img src="./img/gallery/barber1.jpg"/></div>
-      <div class="gallery__img"><img src="./img/gallery/barber2.jpg"/></div>
-      <div class="gallery__img"><img src="./img/gallery/barber3.jpg"/></div>
-      <div class="gallery__img"><img src="./img/gallery/barber_present.jpg"/></div>
-      <div class="gallery__img"><img src="./img/photos/cigar.jpg"/></div>
-      <div class="gallery__img"><img src="./img/gallery/barber.jpg"/></div>
-    </section>
+  <?php if ( function_exists( 'envira_gallery' ) ) { envira_gallery( '153' ); } ?>
 
     <!-- Banner -->
     <section class="horiz-banner">
@@ -103,41 +94,7 @@
       <div class="horiz-banner__more"><a class="button" href="#">Подробнее о курсе</a></div>
     </section>
 
-    <section class="gallery__content">
-      <div class="gallery__img"><img src="./img/gallery/barberina_header.jpg"/></div>
-      <div class="gallery__img"><img src="./img/gallery/barber_tools.jpg"/></div>
-      <div class="gallery__img"><img src="./img/gallery/barber1.jpg"/></div>
-      <div class="gallery__img"><img src="./img/gallery/barber2.jpg"/></div>
-      <div class="gallery__img"><img src="./img/gallery/barber3.jpg"/></div>
-      <div class="gallery__img"><img src="./img/gallery/barber_present.jpg"/></div>
-      <div class="gallery__img"><img src="./img/photos/cigar.jpg"/></div>
-      <div class="gallery__img"><img src="./img/gallery/barber.jpg"/></div>
-    </section>
-
-    <!-- Contacts -->
-    <section class="contacts contacts--inner">
-      <article class="contacts-box contacts-box--inner">
-        <header class="contacts-box__header">
-          <h2 class="contacts-box__title">Контакты</h2>
-          <p class="contacts-box__text">По всем интересующим вас вопросам просим вас связаться с нашим менеджером.</p>
-        </header>
-        <div class="contacts-box__body">
-          <div class="contact">
-            <div class="contact__icon icon-phone"></div>
-            <div class="contact__name">Телефон</div>
-            <div class="contact__value"><a href="tel:+7 926 100-02-66">+7 926 100-02-66</a></div>
-          </div>
-          <div class="contact">
-            <div class="contact__icon icon-mail-alt"></div>
-            <div class="contact__name">e-mail</div>
-            <div class="contact__value"><a href="mailto: info@oldboyacademy.com">info@oldboyacademy.com</a></div>
-          </div>
-        </div>
-        <footer class="contacts-box__footer">
-          <div class="contacts-box__logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип"/></div>
-        </footer>
-      </article>
-    </section>
+  <?php if ( function_exists( 'envira_gallery' ) ) { envira_gallery( '165' ); } ?>
 
     <?php get_footer(); ?>
   </body>
