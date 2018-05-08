@@ -2381,19 +2381,29 @@ body {
     font-weight: 400; }
 
 #envira-gallery-wrap-153 {
-  margin-bottom: 0 !important; }
+  margin-bottom: 0 !important;
+  background-color: #222; }
 
 #envira-gallery-153 {
-  margin-bottom: 0 !important; }
+  margin-bottom: 0 !important;
+  background-color: #222; }
 
 #envira-gallery-wrap-165 {
-  margin-bottom: 0 !important; }
+  margin-bottom: 0 !important;
+  background-color: #222; }
 
 #envira-gallery-165 {
-  margin-bottom: 0 !important; }
+  margin-bottom: 0 !important;
+  background-color: #222; }
 
 .caption {
   display: none !important; }
+
+.envira-gallery-image {
+  border: 0 !important; }
+
+div#envirabox-content {
+  border: 0 !important; }
 
 .courses {
   position: relative;
