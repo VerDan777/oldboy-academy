@@ -185,7 +185,7 @@
     </div> -->
   </section>
 </body>
-<script src="menu.js"></script>
-<script src="app.js"></script>
+<script src="<?php bloginfo('stylesheet_directory'); ?>/menu.js?v='<?php echo rand(); ?>"></script>
+<script src="<?php bloginfo('stylesheet_directory'); ?>/app.js?='<?php echo rand(); ?>"></script>
 
 </html>
