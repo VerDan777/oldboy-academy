@@ -187,7 +187,7 @@
     
     <!-- Footer -->
     <?php get_footer(); ?>
-
+    <!-- Logic error -->
     <script src="<?php bloginfo('stylesheet_directory'); ?>/policy.js?v='<?php echo rand(); ?>"></script>
 </body>
 </html>

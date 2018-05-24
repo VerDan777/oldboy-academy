@@ -1,0 +1,35 @@
+////////////////////// Syntax recomendation /////////////////////////
+1. Какой вид мы используем для doctype? ("doctype" или "<!DOCTYPE html>", на офф. сайте предлагается 2 варианта)
+2. Какой вид мы используем для link? ("link" или "<link>")
+
+///////////////////// Optimization error ///////////////////////////
+1. Подключение мы делаем шрифтов через @font-face(сейчас через <link>)?
+
+
+//////////////////// Human error //////////////////////////////////
+1. Надо бы написать alt в masson logo(404 page, line 32)
+2. Орфографическая ошибка в слове "цветной"(about page, line 54, index page: line 96)
+3. Неактуальная информация(about page, line 103, 120, 126, 147; course page: line 202, 208, index page: line 388, line 395)
+4. Пропущен alt в <img>(course page, line 56, 60, 65, 69, 96; gallery page: line 36, line 55, line 74, index page: line 34, line 113, line 127, line 140, line 171, line 175, line 179, line 183, line 200, line 204, line 208, line 212, line 229, line 233, line 237, 241; masters page: line 183, line 171, 164, line 130; models page: line 30, line 81, line 86, line 92, line 222, line 229; policy page: line 33, line 43, line 122, line 129)
+5. Пустой scss файл "about-promos"
+6. Отступ(contact.scss: line 12, line 26)
+7. Зачем используются несколько цветов?(contacts.scss: line 50)
+8. Пропущено "visual" для background-image(_course.scss: line 176, 181, 191, 196; _hero-course: line 244, line 249, line 259, line 264)
+9. Пропущено "box model" для <img>(_gallery.scss: line 92; _member.scss: line 395)
+10. Орфографическая ошибка в слове "typography"(_gallery.scss: line 177)
+11. Файл _glitch.scss нужно привести к общему код стайлу, как я думаю.
+12. Файл _logo.scss пустой
+13. Добавить динамическую дату для копирайта(footer.php: line 46, page-gallery: line: 95)
+
+
+
+//////////////////// Progressive error //////////////////////////////////
+1. Надо будет заполнить href для соц.сетей(404 page, line 35; gallery page: line 110, index page: line 405;  masters page: line 33, models page: line 33, line 239, policy page: line 36, line 140)
+
+/////////////////// Naming error ///////////////////////////////////////
+1. Наименование класса "four-o-four" может быть заменить?(404 page, line 42)
+2. Наименование модификатора "glitch--style-1". Есть возможность написать модификатор без цифр?
+
+
+/////////////////// Logic error ////////////////////////////////////////
+1.Может быть для смены файла стилей и скрипта использовать инкрементацию счетчика, а не рандом?(все файлы php, кроме order, footer)

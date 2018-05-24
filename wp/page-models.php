@@ -120,9 +120,10 @@
 
     <!-- Footer -->
     <?php get_footer(); ?>
-
+    <!-- Logic error -->
     <script src="<?php bloginfo('stylesheet_directory'); ?>/models.js?v='<?php echo rand(); ?>"></script>
     <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&amp;callback=initMap"></script>
+    <!-- Logic error -->
     <script src="<?php bloginfo('stylesheet_directory'); ?>/map.js?v='<?php echo rand(); ?>"></script>
 </body>
 </html>

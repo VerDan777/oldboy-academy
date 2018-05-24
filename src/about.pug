@@ -1,3 +1,4 @@
+// Syntax error
 <!DOCTYPE html>
 html(lang="ru")
     head
@@ -5,10 +6,11 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
 
+        // Syntax error and // Optimization error
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
         link(rel="stylesheet", href="styles.css")
-
+        
         title Oldboy Academy
 
     body
@@ -29,6 +31,7 @@ html(lang="ru")
                 .main-nav__social
                     .masson
                         .masson__logo
+                            // Human error                        
                             img(src="./img/masson.png", alt="")
                         .masson__social
                             a(href="#").icon-vkontakte
@@ -37,6 +40,7 @@ html(lang="ru")
                         a.masson__tag(href="#") #<em>OldboyAcademy</em>
 
             .page-header__phone.page-header__phone--inner
+                // Human error
                 a(href="tel:+79114567890") +7 911 456-78-90
 
             .menu-icon.menu-icon--inner: .menu-icon__middle
@@ -47,6 +51,7 @@ html(lang="ru")
 
         section.about
             .about__logo
+                // Human error
                 img(src="./img/logo.svg", alt="Академия Олдбой цветно логотип")
 
             .about__content
@@ -94,6 +99,7 @@ html(lang="ru")
         section.horiz-banner
             header.horiz-banner__header
                 p.horiz-banner__suptitle Академия Oldboy
+                // Human error       
                 h2.horiz-banner__title С 31 октября<br>старт нового курса
                 p.horiz-banner__subtitle Базовый курс для тех, кто хочет освоить профессию барбера
             .horiz-banner__more
@@ -110,12 +116,14 @@ html(lang="ru")
                         .contact__icon.icon-phone
                         .contact__name Телефон
                         .contact__value
+                            // Human error
                             a(href="tel:+79114567890") +7 911 456-78-90
 
                     .contact
                         .contact__icon.icon-mail-alt
                         .contact__name e-mail
                         .contact__value
+                            // Human error
                             a(href="mailto: academy@oldboy.com") academy@oldboy.com
 
                 footer.contacts-box__footer
@@ -135,6 +143,7 @@ html(lang="ru")
                         li: a(href="#") Отзывы
                         li: a(href="#") Моделям
                         li: a(href="#") Сертификаты
+                // Human error
                 .page-footer__copy &copy;Академия Олдбой. 2017<br>Все права сохранены.
 
     script(src="menu.js")

@@ -1,10 +1,11 @@
+// Syntax error
 <!DOCTYPE html>
 html(lang="ru")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-
+        // Syntax error and // Optimzation error
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
         link(rel="stylesheet", href="styles.css")
@@ -26,8 +27,10 @@ html(lang="ru")
                 .main-nav__social
                     .masson
                         .masson__logo
+                            // Human error
                             img(src="./img/masson.png", alt="")
                         .masson__social
+                            // Progressive error
                             a(href="#").icon-vkontakte
                             a(href="#").icon-instagram
                         
@@ -75,15 +78,18 @@ html(lang="ru")
                                         input.service-options__input(type="radio" id="haircut-short" name="haircut-option" checked)
                                         label.service-options__label(for="haircut-short")
                                             img.service-options__image(src="./img/models/haircut_short.svg", alt="")
+                                            // Human error
                                             .service-options__name короткая
                                     .service-options__group
                                         input.service-options__input(type="radio" id="haircut-medium" name="haircut-option")
                                         label.service-options__label(for="haircut-medium")
+                                            // Human error
                                             img.service-options__image(src="./img/models/haircut_medium.svg", alt="")
                                             .service-options__name средняя
                                     .service-options__group
                                         input.service-options__input(type="radio" id="haircut-long" name="haircut-option")
                                         label.service-options__label(for="haircut-long")
+                                            // Human error
                                             img.service-options__image(src="./img/models/haircut_long.svg", alt="")
                                             .service-options__name длинная
                             input.hero-form__button(type="submit" value="Подать заявку")
@@ -213,12 +219,14 @@ html(lang="ru")
                         .contact__icon.icon-phone
                         .contact__name Телефон
                         .contact__value
+                            // Human error
                             a(href="tel:+79114567890") +7 911 456-78-90
 
                     .contact
                         .contact__icon.icon-mail-alt
                         .contact__name e-mail
                         .contact__value
+                            // Human error
                             a(href="mailto: academy@oldboy.com") academy@oldboy.com
 
                 footer.contacts-box__footer
@@ -228,6 +236,7 @@ html(lang="ru")
 
             .page-footer__wrapper
                 .page-footer__social
+                    // Progressive error
                     a(href="").icon-vkontakte
                     a(href="").icon-instagram
                 nav.page-footer__menu

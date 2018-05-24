@@ -1,3 +1,4 @@
+// Syntax error
 <!DOCTYPE html>
 html(lang="ru")
     head
@@ -5,6 +6,7 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
 
+        // Syntax error and // Optimization error
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
         link(rel="stylesheet", href="styles.css")
@@ -26,15 +28,17 @@ html(lang="ru")
                 .main-nav__social
                     .masson
                         .masson__logo
+                            // Human error
                             img(src="./img/masson.png", alt="")
                         .masson__social
+                            // Progressive error
                             a(href="#").icon-vkontakte
                             a(href="#").icon-instagram
                         
                         a.masson__tag(href="#") #<em>OldboyAcademy</em>
 
             .menu-icon.menu-icon--inner: .menu-icon__middle
-
+        // Human error
         .four-o-four
             .four-o-four__404
                 .message-404
@@ -43,6 +47,7 @@ html(lang="ru")
                     p.message-404__text Страница устарела, была удалена или не существовала вовсе.
                     a.button(href="#") Вернуться на главную
             .four-o-four__glitch
+                // Naming error
                 .glitch.glitch--style-1
                     .glitch__img
                     .glitch__img

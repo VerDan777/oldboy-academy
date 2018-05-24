@@ -1,10 +1,11 @@
+// Syntax error
 <!DOCTYPE html>
 html(lang="ru")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-
+        // Syntax error and // Optimization error
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
         link(rel="stylesheet", href="styles.css")
@@ -26,8 +27,10 @@ html(lang="ru")
                 .main-nav__social
                     .masson
                         .masson__logo
+                            // Human error
                             img(src="./img/masson.png", alt="")
                         .masson__social
+                            // Progressive error
                             a(href="#").icon-vkontakte
                             a(href="#").icon-instagram
                         
@@ -52,6 +55,7 @@ html(lang="ru")
                 .about__content.about__content--left
                     h2.about__title В основу семинара положен симбиоз между двумя фундаментальными школами мужского грумминга:
                     .about__image
+                        // Human error
                         img(src="img/photos/cigar.jpg", alt="")
 
                 .about__content.about__content--right
@@ -122,6 +126,7 @@ html(lang="ru")
             .fking-wrapper
                 article.member
                     header.member__header
+                        // Human error
                         .member__photo: img(src="./img/members/barber1.png", alt="")
                         h3.member__name Юрий<br>Артюх
                     .member__content
@@ -156,12 +161,14 @@ html(lang="ru")
                         .contact__icon.icon-phone
                         .contact__name Телефон
                         .contact__value
+                            // Human error
                             a(href="tel:+79114567890") +7 911 456-78-90
 
                     .contact
                         .contact__icon.icon-mail-alt
                         .contact__name e-mail
                         .contact__value
+                            // Human error
                             a(href="mailto: academy@oldboy.com") academy@oldboy.com
 
                 footer.contacts-box__footer
@@ -173,6 +180,7 @@ html(lang="ru")
 
             .page-footer__wrapper
                 .page-footer__social
+                    // Progressive error
                     a(href="").icon-vkontakte
                     a(href="").icon-instagram
                 nav.page-footer__menu
