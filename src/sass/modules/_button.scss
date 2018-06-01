@@ -33,4 +33,19 @@
         // visual
         background-color: $blue;
     }
+
+    &--outline {
+        // box model
+        border: 1px solid $gold;
+        color: $gold;
+
+        // visual
+        background-color: $white;
+
+        &:hover {   
+            // visual
+            background-color: $gold;
+            color: $white;
+        }
+    }
 }

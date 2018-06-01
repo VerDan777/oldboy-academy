@@ -104,8 +104,34 @@
         }
     }
 
-    &--masters {
+    &--about {
+        // visual
+        background-position: center top;
+        background-size: cover;
+        
+        @include atTabletsLandscape {
+            // visual
+            background-image: url("./img/hero-bg.jpg");
+        }
 
+        &::before {
+            content: "";
+    
+            // positioning
+            position: absolute;
+            top: -1px;
+            left: 0;
+            z-index: 6;
+    
+            // box model
+            height: 32px;
+            width: 100%;
+            background-image: url("./img/deco-b-r.svg");
+            background-size: 80px;
+            background-repeat: repeat-x;
+            background-position: -40px top;
+            
+        }
     }
 
     &--models {

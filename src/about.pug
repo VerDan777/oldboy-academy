@@ -35,10 +35,10 @@ html(lang="ru")
 
             .menu-icon.menu-icon--inner: .menu-icon__middle
         
-        section.hero.hero--course
+        section.hero.hero--course.hero--inner
             .hero__logo
                 a(href="#")
-                    img(src="./img/logo/svg", alt="Академия Олдбой логотип")
+                    img(src="./img/logo.svg", alt="Академия Олдбой логотип")
             header.hero__header
                 .hero-header__caption
                     p.hero-header__subtitle История Академии
@@ -49,51 +49,121 @@ html(lang="ru")
             .about__row
                 .about__content.about__content--left
                     .about__logo
-                        img(src="./img/logo.svg", alt="Академия Oлдбой цветной логотип")
-                
+                        img(src="./img/logo.svg", alt="Академия Олдбой цветно й логотип")
                 .about__content.about__content--right
                     h2.about__title Академия барберинга OldBoy —&nbsp;место, где рождаются настоящие мужские парикмахеры
                     p.about__text В 2014 году парни из Калининграда задались целью открыть в России место без женщин, где каждый мужчина сможет получить высококачественную стрижку и бритье. Место, которое хранит в себе традиции лучших цирюлен прошлого века. У них получилось это сделать
                     p.about__text Спустя какое-то время начало поступать множество запросов от барберов России и СНГ на аналогичную подготовку, которую имеют мастера OldBoy.Они хотели овладеть теми же нвыками и мастерством. До сих пор это было невозможно.
                     p.about__text Но уже сейчас академия Барберинга OldBoy открывает свои двери для всех желающих, кто готов погрузиться в атмосферу старых цирюлен и обучиться древнему мастерству барберинга.
+                
+
+        section.hero.hero--about.hero--inner
+            header.hero__header
+                .hero-header__caption
+                    p.hero-header__subtitle Профессия барбера - одна из старейших в мире
+                    h1.hero-header__title Ремесло, которым <br> заниматься всю жизнь,<br>овладея им
+                    p.hero-header__text В нашей академии OldBoy мастера преподают, мотивируют и вдохновляют своих учеников(начинающих и продвинутых) с целью возвести барберинг в России на высокий уровень.<br>Студенты обучаются хорошо разбираться в новейших технлогиях индустрии и ее тенденциях.
+                    //- p.hero-header__text Студенты обучаются хорошо разбираться в новейших технлогиях индустрии и ее тенденциях.
+
+        section.about.about--white-border-before
+            .about__row.about__row--inline
+                .about__content.about__content--left
+                    h2.about__title.about__title--feature Узнай больше о курсах
+                    p.about__text.about__text--feature Вся информация о наших текущих курсах представлена в разделе курсы "Курсы", там ты найдешь информацию по всем интересущим тебя направлениям
+                    .text-promo__more
+                        a.button.button--outline(href="#") Курсы
+
+                .about__content.about__content--left
+                    h2.about__title.about__title--feature Есть вопросы? Напиши нам
+                    p.about__text.about__text--feature Все еще остались вопросы о том как попасть в нашу Академию? Никаких проблем, мы готовы ответить на все твои вопросы, просто напиши нам
+                    .text-promo__more
+                        a.button.button--outline(href="#") Контакты
+
+                .about__content.about__content--left
+                    .about__logo.about__logo--mini
+                        img(src="./img/logo.svg", alt="Академия Олдбой цветно й логотип")
+
+        section.about.about--yellow.about--white-border-before.about--gradient
+            .about__row
+                .about__content.about__content--left
+                p.hero-header__subtitle.hero-header__subtitle--black Почему именно стоит обучаться в нашей академии
+                h2.about__title Преимущества обучения<br>в Академии  OldBoy
+            .feature-gallery
+                .feature-gallery__gallery
+                .feature-gallery__info
+                    .about__row
+                        .about__content.about__content--right
+                        h2.about__title Оптимальный баланс<br> практики и теории
+
+                    .about__row
+                        .about__content.about__content--left
+                        h2.about__suptitle Опытные преподаватели<br> с многолетним стажем
+                        p.about__text.about__text--desc Обучение парикмахеров, которое мы предлагаем в академии Барберинга OldBoy, возглавляет команда из наших тренеров. Все они с многолетним опытом работы в сфере барберинга. Их совместная работа четко, отражает то, как они выстроили курсы для будущих мастеров.
+
+                    .about__row
+                        .about__content.about__content--left
+                        h2.about__suptitle Ориентированность<br>на работу с живыми моделями
+                        p.about__text.about__text--desc Все услуги, оказываемые нашими учениками, бесплатны. Так как мы обеспечиваем возможность нашим студентам практиковаться на живых людях. Все они с многолетним опытом работы в сфере барберинга. Их совместная работа четко, отражает то, как они выстроили курсы для будущих мастеров.Каждый студент контролируется своим уровнем квалификации,а, чтобы помочь в развитии мастерства, его наставник регулирует процесс. Таким образом, ни одна стрижка или бритье не покидает стены академии, без подтверждения качества со стороны опытных преподавателей с многолетним стажем
                     
-        section.contacts.contacts--inner
-            article.contacts-box.contacts-box--inner
-                header.contacts-box__header
-                    h2.contacts-box__title Контакты
-                    p.contacts-box__text По всем интересующим вас вопросам просим вас связаться с нашим менеджером.
+                    .about__row
+                        .about__content.about__content--left
+                        h2.about__suptitle Психологиия общения<br>и работа с клиентом
+                        p.about__text.about__text--desc Все услуги, оказываемые нашими учениками, бесплатны. Так как мы обеспечиваем возможность нашим студентам практиковаться на живых людях.Все они с многолетним опытом работы в сфере барберинга. Их совместная работа четко, отражает то, как они выстроили курсы для будущих мастеров. Каждый студент контролируется своим уровнем квалификации,а, чтобы помочь в развитии мастерства, его наставник регулирует процесс. Таким образом, ни одна стрижка или бритье не покидает стены академии, без подтверждения качества со стороны опытных преподавателей с многолетним стажем
+ 
 
-                .contacts-box__body
-                    .contact
-                        .contact__icon.icon-phone
-                        .contact__name Телефон
-                        .contact__value
-                            a(href="tel:+79114567890") +7 911 456-78-90
+        section.about.about--white.about-border-after
+            .about__row
+                .about__content.about__content--left
+                h2.about__title Комфортные условия обучения в Академии
+                
+            .about__row
+                .about__content.about__content--left
+                h2.about__suptitle Современное оборудование<br> и оснащенный зал
+                p.about__text.about__text--desc Обучение происходит в полностью оснащенном зале, только на современном оборудовании. Каждый ученик знакомится с необходимыми инструментарием барбера, параллельно обучаясь владеть им на высшем уровне.
 
-                    .contact
-                        .contact__icon.icon-mail-alt
-                        .contact__name e-mail
-                        .contact__value
-                            a(href="mailto: academy@oldboy.com") academy@oldboy.com
+            .about__row
+                .about__content.about__content--left
+                h2.about__suptitle Удобное расположение хостела<br> для проживания
+                p.about__text.about__text--desc На время обучения, есть возможность разместиться в комфортабельном хостеле, не далеко от академии. Студенты могут после обучения общаться и делиться опытом. А удобное расположение В центре города позволяет свободно перемещаться по центру столицы.
+            
+            .about__row
+                .about__content.about__content--left
+                h2.about__suptitle Помощь в трудоустройстве,<br>рекомендации и поддержка
+                p.about__text.about__text--desc Каждый студент, достигнув сертификации академии Барберинга OldBoy, гарантированно получает помощь в трудоустройстве,<br> рекомендации от мастеров, у которых он учился, и поддержку на протяжении всего карьерного роста.Все студенты являются членами базы барберов OldBoy, которая позволяет стажироваться и ездить по обмену во все филиалы франшизы.
+        
+        section.about.about--white.about-border-after
+            .feature-gallery
+                .feature-gallery__gallery
+                    .feature-gallery__outer-img
+                        img(src="./img/features-bg.jpg" alt="OldBoy photo")
+                .feature-gallery__info
+                    .about__row
+                        .about__content.about__content--right
+                        h2.about__title Создание рабочих<br> и творческих связей
 
-                footer.contacts-box__footer
-                    .contacts-box__logo
-                        //- img(src="./img/logo.svg", alt="Академия Олдбой логотип")
-                        img(src="./img/logo-bw.svg", alt="Академия Олдбой логотип")
-        footer.page-footer.page-footer--inner
+                    .about__row
+                        .about__content.about__content--left
+                        h2.about__suptitle Создание команды профессионалов<br> и их продвижение на барберинг арене
+                        p.about__text.about__text--desc Наш бренд узнаваем во всем мире. Студенты входит в команду профессионалов, которая активно продвигается во всем мире.
+                        p.about__text.about__text--desc Это уникальная возможность показать свое мастероство на арене барберинга, а также получать новый опыт от коллег.
 
-            .page-footer__wrapper
-                .page-footer__social
-                    a(href="").icon-vkontakte
-                    a(href="").icon-instagram
-                nav.page-footer__menu
-                    ul
-                        li: a(href="#") Курсы
-                        li: a(href="#") Команда
-                        li: a(href="#") Отзывы
-                        li: a(href="#") Моделям
-                        li: a(href="#") Сертификаты
-                .page-footer__copy &copy;Академия Олдбой. 2017<br>Все права сохранены.
+                    .about__row
+                        .about__content.about__content--left
+                        h2.about__suptitle Особые условия и выгодные<br>предложения партнеров
+                        p.about__text.about__text--desc Академия Барберинга OldBoy сотрудничает с множеством марок специализированный косметики. А также различные бонусы и предложения, которые часто поступают от компаний, распространяются на студентов академии. Каждый студент контролируется своим уровнем квалификации,а, чтобы помочь в развитии мастерства, его наставник регулирует процесс. Таким образом, ни одна стрижка или бритье не покидает стены академии, без подтверждения качества со стороны опытных преподавателей с многолетним стажем
+                    
+                    .about__row
+                        .about__content.about__content--left
+                        h2.about__suptitle Психологиия общения<br>и работа с клиентом
+                        p.about__text.about__text--desc Все услуги, оказываемые нашими учениками, бесплатны. Так как мы обеспечиваем возможность нашим студентам практиковаться на живых людях.Все они с многолетним опытом работы в сфере барберинга. Их совместная работа четко, отражает то, как они выстроили курсы для будущих мастеров. Наши партнеры всегда открыты и заинтересованы в продвижении новых лиц в мире барьберинга.
+         
+        section.gallery
+            .gallery__preview
+            header.gallery__header
+                h2.gallery__title Добро<br>пожаловать<br>в&nbsp;семью OldBoy
+                p.gallery__subtitle Место где тебя не просто научат всем основам профессии, но и дадут серьезную поддержку для развития своих профессинальных навыков
+                .gallery__more: a(href="").button записаться на курсы
+
 
     script(src="menu.js")
     script(src="app.js")

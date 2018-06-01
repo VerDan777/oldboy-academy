@@ -38,7 +38,7 @@
         padding: 60px 25px;
 
         // visual
-        background-color: $yellow;
+        // background-color: $yellow;
 
         @include atTabletsPortrait {
             // box model
@@ -49,6 +49,11 @@
             // box model
             padding: 80px 120px;
         }
+    }
+
+    &--gradient {
+        // visual
+        background: linear-gradient(to bottom, $yellow, $white 35%)
     }
     
     &--white-border-before {
@@ -96,6 +101,7 @@
     }
 
     &__row {
+
         &::after {
             content: "";
             
@@ -103,6 +109,12 @@
             display: table;
             width: 100%;
             clear: both;
+        }
+
+        &--inline {
+            // box model
+            display: flex;
+            justify-content: space-between;
         }
     }
 
@@ -132,11 +144,20 @@
             // width: 45%;
         }
 
+
         img {
             // box model
             display: inline-block;
             width: 100%;
             max-width: 450px;
+        }
+
+        &--mini {
+            // box model
+            display: inline-block;
+            width: 150px;
+            margin: 0;
+            margin-left: 250px;
         }
     }
 
@@ -246,7 +267,17 @@
             // typography
             font-size: 2.5rem;
         }
+
+        &--feature {
+            // typography
+            @include atDesktop {
+                font-size: 1.25rem;
+                font-family: $mainFont;
+                font-weight: 400;
+            }
+        }
     }
+
 
     &__subtitle {
         // typography
@@ -279,6 +310,26 @@
         @include atDesktop {
             // typography
             font-size: 1.125rem;
+        }
+
+        &--feature {
+            
+            @include atDesktop {
+                // box model
+                width: 500px;
+            }
+        }
+
+        &--desc {
+            @include atDesktop {
+                // box model
+                width: 800px;
+
+                // typography
+                font-size: 1rem;
+                line-height: 1.5;
+                color: $dark;
+            }
         }
     }
 
